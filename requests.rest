@@ -1,0 +1,22 @@
+GET http://localhost:5002/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imd5dWRvbmciLCJwYXNzd29yZCI6InRlc3QiLCJpYXQiOjE1OTA4MjU4OTgsImV4cCI6MTU5MDgyNTkyOH0.sv0ea9iPYhZr8rqsdAWNgz-pOpzaXrhS0kzHHiyWog0
+
+###
+
+POST http://localhost:5003/login
+Content-Type: application/json
+
+{
+  "username" : "Patric",
+  "password" : "test"
+}
+
+### 
+
+POST http://localhost:5003/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imd5dWRvbmciLCJwYXNzd29yZCI6InRlc3QiLCJpYXQiOjE1OTA4MjYwMjIsImV4cCI6MTU5NDQyNjAyMn0.7QP5rZ7BmfUS8H1yrux058MgCBTVWvz2w-5gaNU-5ew"
+}
+

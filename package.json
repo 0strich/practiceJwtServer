@@ -1,20 +1,20 @@
 {
-  "name": "sample",
+  "name": "practiceJwtServer",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/0strich/practiceJwtServer.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devServerStart": "nodemon server.js",
+    "devAuthServerStart": "nodemon authServer.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/0strich/practiceJwtServer/issues"
-  },
-  "homepage": "https://github.com/0strich/practiceJwtServer#readme"
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.4"
+  }
 }
